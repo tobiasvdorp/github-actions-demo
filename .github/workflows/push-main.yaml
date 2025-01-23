@@ -12,6 +12,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    # Add permissions to the job
+    permissions:
+      contents: write
 
     steps:
       # Step 1: Checkout the repository code
