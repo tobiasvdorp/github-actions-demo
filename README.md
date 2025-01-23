@@ -3,14 +3,14 @@
 This is a demo React project to showcase some GitHub Action workflows.
 
 ## Getting Started
-````
+
 
 To use this project and test the GitHub Actions workflows, follow these steps:
 
 1. Clone this repository:
    ```bash
    git clone https://github.com/tobiasvdorp/github-actions-demo
-````
+   ```
 
 2. Remove the existing Git history:
 
