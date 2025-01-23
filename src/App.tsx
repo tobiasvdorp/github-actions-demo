@@ -5,7 +5,7 @@ function App() {
     <>
       <div className="">Hello world!</div>
       <div>New feature</div>
-      <div>Error causing div/div>
+      <div>Error causing div</div>
     </>
   );
 }
