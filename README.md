@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# GitHub Actions demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a demo React project to showcase some GitHub Action workflows.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To use this project and test the GitHub Actions workflows, follow these steps:
 
-## Expanding the ESLint configuration
+### Fork this repository:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Click the "Fork" button in the top-right corner of this repository
+2. Select your GitHub account as the destination
+3. After forking, clone your forked repository on your machine:
 
-- Configure the top-level `parserOptions` property like this:
+   ```bash
+   git clone https://github.com/[your-username]/github-actions-demo.git
+   cd github-actions-demo
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Now you can make changes to the workflows (found in `.github/workflows/`) and test them by creating pull requests in your own repository.
+
+### Running the project
+
+Make sure that you have Node installed on your machine. Then follow these steps:
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+This will start the Vite development server and open the app in your browser at `http://localhost:5173`
