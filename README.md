@@ -2,8 +2,8 @@
 
 This is a demo React project to showcase some GitHub Action workflows.
 
-````
 ## Getting Started
+````
 
 To use this project and test the GitHub Actions workflows, follow these steps:
 
