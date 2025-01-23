@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - main
+  # Allow manual activation of the workflow
+  workflow_dispatch:
 
 # Define the jobs to be run
 jobs:
